@@ -279,59 +279,8 @@ print(Bank2.customers)
 
 
 
-if __name__=='__main__':
-     while True:
-        MainMenu= Bank(['\t1.ACCESS TELLER','\t2.ACCESS NAME','\t3.ACCESS LOCATION','\t4.ACCESS CUSTOMER','\t5.ACCESS ACCOUNT','\t6.ACCESS LOAN','\t7.EXIT'])
-        def __init__(self, name, location ):
-          MainMenu.PrintBank()
-          UserInput=MainMenu.GetUserInput()
-          if UserInput =='1':
-            while True:
-                TellerMenu = Bank(['\t1.COLLECT MONEY', '\t2.OPEN ACCOUNT',
-                                              '\t3.CLOSE ACCOUNT','\t4.LOAN REGUEST','\t5.PROVIDE INFO','\t6.ISSUE CARD','\.GO TO PREVIOUS MENU'])
-                TellerMenu.PrintBank()
-                UserInput=TellerMenu.GetUserInput()
-                if UserInput == '1':
-                    collect_money()
-                    continue
-                if UserInput == '2':
-                    open_account()
-                    continue
-                if UserInput == '3':
-                    close_account()
-                    continue
-                if UserInput == '4':
-                  loan_reguest()
-                  continue
-                if UserInput == '5':
-                  provide_info()
-                  continue
-                if UserInput == '6':
-                  issue_card()
-                  continue
-                if UserInput == '7':
-                    break
-    elif UserInput == '2':
-            AcctToTransact=input("PLEASE ENTER THE ACCOUNT NUMBER : ")
-            AmtToTransact=input("PLEASE ENTER THE TRANSACTION AMOUNT : ")
-            trnsct=Transaction(AcctToTransact,AmtToTransact)
-            TransactionMenu = Bank(['\t1.DEPOSIT MONEY',
-                                             '\t2.WITHDRAW MONEY', '\t3.GO TO PREVIOUS MENU'])
-            TransactionMenu.PrintBank()
-            UserInput = TransactionMenu.GetUserInput()
-            if UserInput == '1':
-                trnsct.Deposit()
-                continue
-            if UserInput == '2':
-                trnsct.Withdrawal()
-                continue
-            if UserInput == '3':
-                continue
-        elif UserInput == '3':
-            break
 
-
-
+                 
 
 
 
